@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Missing Number</title>
+</head>
+<body>
+    <script>
+        let arr = prompt("Enter numbers separated by commas:").split(",").map(Number);
+        let n = arr.length + 1;
+        let missing = (n * (n + 1)) / 2 - arr.reduce((a, b) => a + b, 0);
+        alert(missing);
+    </script>
+</body>
+</html>
