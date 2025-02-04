@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Non-Repeating Character</title>
+</head>
+<body>
+    <script>
+        let str = prompt("Enter a string:");
+        let first = [...str].find(c => str.indexOf(c) === str.lastIndexOf(c));
+        alert(first || "No unique character");
+    </script>
+</body>
+</html>
