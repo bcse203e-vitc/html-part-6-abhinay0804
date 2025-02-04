@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Smallest and Largest</title>
+</head>
+<body>
+    <script>
+        let arr = prompt("Enter numbers separated by commas:").split(",").map(Number);
+        let sorted = [...new Set(arr)].sort((a, b) => a - b);
+        alert(`Second Smallest: ${sorted[1]}, Second Largest: ${sorted[sorted.length - 2]}`);
+    </script>
+</body>
+</html>
