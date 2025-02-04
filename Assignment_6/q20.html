@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Count</title>
+</head>
+<body>
+    <script>
+        let str = prompt("Enter a string:");
+        let counts = {};
+        for (let char of str) counts[char] = (counts[char] || 0) + 1;
+        alert(JSON.stringify(counts));
+    </script>
+</body>
+</html>
